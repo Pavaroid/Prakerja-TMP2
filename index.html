@@ -1,71 +1,102 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Profil Saya</title>
+    <title>Portofolio Saya</title>
     <link
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
       rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
     />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header class="bg-dark text-white text-center py-3">
-      <h1>Selamat Datang di Halaman Profil Saya</h1>
+    <header class="bg-success text-white text-center py-3">
+      <h1>Selamat Datang di Halaman Saya</h1>
+      <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a href="#about">Tentang Saya</a></li>
+          <li class="nav-item"><a href="#contact">Hubungi Saya</a></li>
+        </ul>
+      </nav>
     </header>
+
     <main class="container mt-4">
-      <section id="about-me" class="mb-4">
-        <div class="jumbotron">
-          <h2 class="display-4">Tentang Saya</h2>
-          <p class="lead">Nama: Ahmad Rizal Fadilah</p>
-          <p class="lead">
-            Saya adalah seorang Mahasiswa tingkat akhir dan sekarang saya juga
-            sedang berkerja. Saya sedang berminat untuk menjadi full stack web
-            development.
-          </p>
-          <img
-            src="assets/1.jpeg"
-            alt="Foto Diri"
-            width="200px"
-            height="auto"
-            class="img-fluid rounded-circle mb-3"
-          />
-        </div>
+      <section id="about" class="mb-5">
+        <h2>Tentang Saya</h2>
+        <img src="assets/1.jpeg" alt="Foto Diri" class="img-thumbnail" />
+        <p>Halo, nama saya Ahmad Rizal. Saya seorang Freelance.</p>
       </section>
 
-      <section id="detail-me" class="mb-4">
-        <div class="jumbotron">
-          <h2 class="display-4">Detail Saya</h2>
-          <p class="lead">
-            Untuk mengenal saya lebih dalam, anda dapat mengunjungi halaman
-            <a href="detail.html">disini.</a>
-          </p>
-        </div>
+      <section id="contact">
+        <h2>Hubungi Saya</h2>
+        <form action="your-form-handler.php" method="post">
+          <label for="name">Nama:</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            class="form-control"
+            required
+          /><br />
+
+          <label for="email">Email:</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            class="form-control"
+            required
+          /><br />
+
+          <label for="phone">No Telepon:</label>
+          <input
+            type="tel"
+            id="phone"
+            name="phone"
+            class="form-control"
+            required
+          /><br />
+
+          <label for="message">Pesan:</label>
+          <textarea
+            id="message"
+            name="message"
+            class="form-control"
+            required
+          ></textarea
+          ><br />
+
+          <input type="submit" value="Kirim" class="btn btn-success" />
+        </form>
       </section>
 
-      <section id="contact-me" class="mb-4">
-        <div class="jumbotron">
-          <h2 class="display-4">Kontak</h2>
-          <p class="lead">
-            Untuk dapat menghubungi saya, anda dapat mengunjungi halaman
-            <a href="contact.html">disini.</a>
-          </p>
-        </div>
+      <section id="temperature-conversion" class="my-5">
+        <h2>Konversi Suhu</h2>
+        <input
+          type="number"
+          id="fahrenheit"
+          placeholder="Masukkan Fahrenheit"
+          class="form-control"
+        />
+        <button onclick="convertTemperature()" class="btn btn-primary mt-2">
+          Konversi ke Celcius
+        </button>
+        <p id="celsius"></p>
+      </section>
+
+      <section id="clock-section" class="my-5">
+        <h2>Jam Saat Ini</h2>
+        <p id="clock"></p>
       </section>
     </main>
-    <footer class="bg-dark text-white text-center py-3">
-      <p>&copy; Ahmad Rizal | All rights reserved.</p>
-      <p>
-        <a href="https://github.com/Pavaroid/Prakerja-TMP2.git"
-          >https://github.com/Pavaroid/Prakerja-TMP2.git</a
-        >
-      </p>
 
-      <!-- Content goes here -->
-      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-      <script src="https://cdn.jsdelivr.net./npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
-      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <footer class="bg-dark text-white text-center py-3">
+      <p>Hak Cipta &copy; 2024 Ahmad Rizal</p>
     </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
   </body>
 </html>
