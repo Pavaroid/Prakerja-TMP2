@@ -4,38 +4,68 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Profil Saya</title>
-    <link rel="stylesheet" href="style.css">
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header>
+    <header class="bg-dark text-white text-center py-3">
       <h1>Selamat Datang di Halaman Profil Saya</h1>
     </header>
-    <main>
-      <section>
-        <h2>Tentang Saya</h2>
-        <p>Nama: Ahmad Rizal Fadilah</p>
-        <p>
-          Saya adalah seorang Mahasiswa tingkat akhir dan sekarang saya juga
-          sedang berkerja. Saya sedang berminat untuk menjadi full stack web
-          development.
-        </p>
-        <img src="assets/1.jpeg" alt="Foto Diri" width="200px" height="auto" class="profile-pic" />
+    <main class="container mt-4">
+      <section id="about-me" class="mb-4">
+        <div class="jumbotron">
+          <h2 class="display-4">Tentang Saya</h2>
+          <p class="lead">Nama: Ahmad Rizal Fadilah</p>
+          <p class="lead">
+            Saya adalah seorang Mahasiswa tingkat akhir dan sekarang saya juga
+            sedang berkerja. Saya sedang berminat untuk menjadi full stack web
+            development.
+          </p>
+          <img
+            src="assets/1.jpeg"
+            alt="Foto Diri"
+            width="200px"
+            height="auto"
+            class="img-fluid rounded-circle mb-3"
+          />
+        </div>
       </section>
-      <section>
-        <h2>Kontak</h2>
-        <p>
-          Untuk dapat menghubungi saya, anda dapat mengunjungi halaman
-          <a href="contact.html">disini.</a>
-        </p>
+
+      <section id="detail-me" class="mb-4">
+        <div class="jumbotron">
+          <h2 class="display-4">Detail Saya</h2>
+          <p class="lead">
+            Untuk mengenal saya lebih dalam, anda dapat mengunjungi halaman
+            <a href="detail.html">disini.</a>
+          </p>
+        </div>
+      </section>
+
+      <section id="contact-me" class="mb-4">
+        <div class="jumbotron">
+          <h2 class="display-4">Kontak</h2>
+          <p class="lead">
+            Untuk dapat menghubungi saya, anda dapat mengunjungi halaman
+            <a href="contact.html">disini.</a>
+          </p>
+        </div>
       </section>
     </main>
-    <footer>
+    <footer class="bg-dark text-white text-center py-3">
       <p>&copy; Ahmad Rizal | All rights reserved.</p>
       <p>
         <a href="https://github.com/Pavaroid/Prakerja-TMP2.git"
           >https://github.com/Pavaroid/Prakerja-TMP2.git</a
         >
       </p>
+
+      <!-- Content goes here -->
+      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+      <script src="https://cdn.jsdelivr.net./npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     </footer>
   </body>
 </html>

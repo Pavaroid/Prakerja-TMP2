@@ -4,54 +4,84 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Hubungi Saya - Profil Saya</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header>
+    <header class="bg-dark text-white text-center py-3">
       <h1>Hubungi Saya</h1>
     </header>
-    <main>
-      <section>
+    <main class="container mt-4">
+      <section id="contact-me" class="mb-4">
         <h2>Form Kontak</h2>
-        <form action="submit_contact.php" method="post">
-          <label for="nama">Nama : </label>
-          <input
-            type="text"
-            id="nama"
-            name="nama"
-            class="form-input"
-            required
-          /><br />
-          <label for="email">Email : </label>
-          <input
-            type="email"
-            id="email"
-            name="email"
-            class="form-input"
-            required
-          /><br />
-          <label for="telepon">Telepon : </label>
-          <input
-            type="tel"
-            id="telepon"
-            name="telepon"
-            class="form-input"
-            required
-          /><br />
-          <label for="Pesan">Pesan: </label>
-          <textarea
-            id="pesan"
-            name="pesan"
-            class="form-input"
-            required
-          ></textarea
-          ><br />
-          <button type="submit" class="form-submit">Kirim</button>
+        <form
+          action="mailto:Pavaroid@gmail.com"
+          method="post"
+          enctype="text/plain"
+          class="needs-validation"
+          novalidate
+        >
+          <div class="form-group">
+            <label for="name">Nama : </label>
+            <input
+              type="text"
+              id="nama"
+              name="nama"
+              class="form-control"
+              required
+            /><br />
+            <div class="invalid-feedback">Harap isi nama anda.</div>
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email : </label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              class="form-control"
+              required
+            /><br />
+            <div class="invalid-feedback">Harap isi email yang valid.</div>
+          </div>
+
+          <div class="form-group">
+            <label for="telepon">Telepon : </label>
+            <input
+              type="tel"
+              id="telepon"
+              name="telepon"
+              class="form-control"
+              required
+            /><br />
+            <div class="invalid-feedback">Harap isi nomor telepon anda.</div>
+          </div>
+
+          <div class="form-group>
+            <label for="Pesan">Pesan: </label>
+            <textarea
+              id="pesan"
+              name="pesan"
+              class="form-control"
+              required
+            ></textarea
+            ><br />
+            <div class="invalid-feedback">Harap isi pesan anda.</div>
+          </div>
+            <button type="submit" class="btn btn-primary">Kirim</button>
         </form>
       </section>
     </main>
-    <footer>
+    <footer class="bg-dark text-white text-center py-3">
       <p>&copy; 2024 Ahmad Rizal | All rights reserved.</p>
     </footer>
+
+    <!-- Content goes here -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net./npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
   </body>
 </html>

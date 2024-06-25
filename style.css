@@ -65,7 +65,7 @@ section {
 }
 
 /* Gaya Formulir */
-.form-input {
+.form-group {
   width: 100%;
   padding: 0.5em;
   margin: 0.5em 0;
@@ -99,6 +99,26 @@ section {
   -o-transition: background-color 0.3s ease;
 }
 
+.form-control:hover {
+  border-color: #0056b3;
+}
+
+.form-control:focus {
+  border-color: #0056b3;
+  box-shadow: 0 0 5px rgba(0, 86, 179, 0.5);
+}
+
+.btn-primary {
+  transition: background-color 0.3s ease;
+  -webkit-transition: background-color 0.3s ease;
+  -moz-transition: background-color 0.3s ease;
+  -ms-transition: background-color 0.3s ease;
+  -o-transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #004a99;
+}
 /* Gaya Footer */
 footer {
   background-color: #333;
